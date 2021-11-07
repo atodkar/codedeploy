@@ -10,7 +10,7 @@ phases:
     commands:
       - mvn package
       - mkdir artifact
-      - unzip target/my.war -d artifact/
+      - unzip target/SampleMavenTomcatApp.war -d artifact/
 artifacts:
     files:
         - artifact/**/*
