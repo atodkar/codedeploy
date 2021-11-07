@@ -11,7 +11,8 @@ phases:
       - mvn package
       - mkdir artifact
       - unzip target/SampleMavenTomcatApp.war -d artifact/
+      - mv artifact/WEB-INF WEB-INF
 artifacts:
-    files:
-        - artifact/**/*
-    name: artifact
+  files:
+   - WEB-INF/**/*
+  name: artifact 
